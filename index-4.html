@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+ <meta name="theme-color" content="#b6002b">
+ <meta name="description" content="Prototype de démonstration Volkswagen × L'argus : choix du modèle, concession et demande d’essai.">
+ <title>Essayer une Volkswagen | L’argus — Préproduction</title>
+ <link rel="stylesheet" href="css/styles.css">
+ <script src="js/catalog.js" defer></script><script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="environment-banner" role="status"><span class="env-dot"></span> PROTOTYPE DE PRÉPRODUCTION <span class="environment-banner-secondary">— aucun lead ni SMS envoyé</span></div>
+  <header class="site-header">
+    <div class="header-main wrap">
+      <button class="menu-square mobile-only" data-action="toggle-menu" aria-label="Ouvrir le menu">☰</button>
+      <a href="/" class="argus-logo" data-action="view" data-view="landing" aria-label="L’argus, accueil">L’argus</a>
+      <div class="header-tools"><label class="search-container"><span class="sr-only">Recherche</span><input type="search" placeholder="Rechercher sur largus.fr" disabled aria-label="Recherche non active en démonstration"><span class="search-glyph">⌕</span></label><span class="header-tool">Accès pro</span><span class="header-tool">Mon Argus<sup>®</sup></span></div>
+      <button class="menu-square mobile-only" data-action="search" aria-label="Recherche">⌕</button>
+    </div>
+    <nav class="nav-main" id="nav-main" aria-label="Navigation principale"><div class="wrap nav-items">
+      <button data-action="view" data-view="cote">Cote Argus<sup>®</sup></button>
+      <button data-action="view" data-view="article">Essais</button>
+      <button data-action="view" data-view="brand">Nouveautés</button>
+      <button data-action="view" data-view="article">Actus</button>
+      <button data-action="view" data-view="model">Guide d’achat</button>
+      <button data-action="view" data-view="listing">Annonces auto</button>
+      <button data-action="view" data-view="landing">Tester une voiture</button>
+    </div></nav>
+    <div class="nav-topics"><div class="wrap"><span class="topic-lead">À LA UNE</span><span class="topic-active">Véhicules électriques / hybrides</span><span>Volkswagen</span><span>Le marché automobile</span><span>Comparatifs</span></div></div>
+  </header>
+  <div class="scene-switch" aria-label="Choisir un contexte de présentation"><div class="wrap scene-switch-inner"><span class="scene-label">APERÇUS D’INTÉGRATION</span><div class="scene-buttons">
+   <button data-action="view" data-view="landing" class="selected">Page d’essai</button>
+   <button data-action="view" data-view="home">Accueil</button>
+   <button data-action="view" data-view="brand">Page marque</button>
+   <button data-action="view" data-view="article">Article / rail</button>
+   <button data-action="view" data-view="model">Fiche modèle</button>
+   <button data-action="view" data-view="listing">Annonces</button>
+   <button data-action="view" data-view="cote">Cote Argus</button>
+  </div><span class="screen-device">PC + mobile</span></div></div>
+  <main id="scene-root" aria-live="polite"></main>
+  <footer class="site-footer"><div class="wrap footer-grid"><div><strong class="footer-brand">L’argus</strong><p>L’automobile au cœur de vos décisions.</p><p class="fineprint">Interface démonstrative, sans affiliation technique avec largus.fr. Branding et publication soumis à validation.</p></div><div><b>À propos</b><p>Essais automobiles</p><p>Guide d’achat</p><p>Fiches techniques</p></div><div><b>Infos légales</b><p>Protection des données</p><p>Conditions d'utilisation</p><p>Mentions légales</p></div><div><b>Projet Volkswagen</b><p>Intégration Data On Demand</p><p>Campagne leadgen 2026</p><p>Mode simulation : aucun SMS</p></div></div><div class="wrap fineprint footer-end">© 2026 · Maquette d’intégration Volkswagen × L’argus, version de préproduction.</div></footer>
+  <div id="sticky-cta" class="sticky-cta" hidden></div>
+  <div id="wizard-backdrop" class="wizard-backdrop" hidden><section class="wizard-modal" role="dialog" aria-modal="true" aria-labelledby="wizard-title"><div class="sheet-handle" aria-hidden="true"></div><div class="wizard-modal-bar"><span class="tester-wordmark"><span>tester</span> <em>une voiture</em> <b>by L’argus</b></span><button class="modal-close" data-action="close-wizard" aria-label="Fermer la fenêtre">×</button></div><div id="modal-wizard"></div></section></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
